@@ -6,7 +6,7 @@ Docker image based on centos, fetchmail & procmail & ripmime for fetching extern
 Create /data dir
 ```
 mkdir ~/data
-touch data/.bashrc
+touch ~/data/.bashrc
 ```
 and provide data/.bashrc with following lines
 ```
@@ -16,6 +16,13 @@ export IMAPUSER=<Imap-User>
 export IMAPPASS=<Imap-Password>
 export SSLSELFSIGNED=false
 export DELETE_MESSAGES_AFTER_SAVE_ATTACH=false  
+```
+
+# If you need to periodically check email and save attachment
+simply add this line in file ~/data/.bashrc
+(for example 10 sec)
+```
+export PREIOD=10  
 ```
 
 # If you use Self signed certificate
