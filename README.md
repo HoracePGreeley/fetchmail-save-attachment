@@ -1,7 +1,7 @@
-#Mailfetcher
+# Info
 Docker image based on centos, fetchmail & procmail & ripmime for fetching external mail accounts and saving attachment from messages in provided volume  (for example: /data/file/xml)
 
-##Usage
+# Usage
 
 Create /data dir
 ```
@@ -18,7 +18,7 @@ and provide data/.bashrc with following lines
 	export DELETE_MESSAGES_AFTER_SAVE_ATTACH=false  
 ```
 
-#If you use Self signed certificate
+# If you use Self signed certificate
 ```
 export SSLSELFSIGNED=true   
 ```

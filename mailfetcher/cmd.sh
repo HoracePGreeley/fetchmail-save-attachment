@@ -3,7 +3,7 @@
 dir=/data/file
 
 if cd "$dir" 2>/dev/null; then   # "2>/dev/null" подавление вывода сообщений об ошибках.
-  if [ "$DELETE_MESSAGES_AFTER_SAVE_ATTACH" ] then
+  if [ "$DELETE_MESSAGES_AFTER_SAVE_ATTACH" ]; then
     sudo -u mailfetcher fetchmail -K # DELETE_MESSAGES_AFTER_SAVE_ATTACH
   else
     sudo -u mailfetcher fetchmail # Keep messages
