@@ -10,12 +10,12 @@ touch data/.bashrc
 ```
 and provide data/.bashrc with following lines
 ```
-  export IMAPHOST=<imap-host>
-  export IMAPPORT=<imap-port>
-  export IMAPUSER=<Imap-User>
-  export IMAPPASS=<Imap-Password>
-  export SSLSELFSIGNED=false
-  export DELETE_MESSAGES_AFTER_SAVE_ATTACH=false  
+export IMAPHOST=<imap-host>
+export IMAPPORT=<imap-port>
+export IMAPUSER=<Imap-User>
+export IMAPPASS=<Imap-Password>
+export SSLSELFSIGNED=false
+export DELETE_MESSAGES_AFTER_SAVE_ATTACH=false  
 ```
 
 # If you use Self signed certificate
@@ -27,13 +27,13 @@ Hash of the certificate will be accomplished by c_rehash. Automatically get the 
 # Delete all messages from mailboxes after save attachment
 WARNING!!!  Create new email for this option. Don't use your mailbox.
 ```
-	export DELETE_MESSAGES_AFTER_SAVE_ATTACH=true
+export DELETE_MESSAGES_AFTER_SAVE_ATTACH=true
 ```
 
 # build
 ```
-	cd <DockerfileDir>
-	docker build -t <ImageName> .
+cd <DockerfileDir>
+docker build -t <ImageName> .
 ```
 
 # Create Container
