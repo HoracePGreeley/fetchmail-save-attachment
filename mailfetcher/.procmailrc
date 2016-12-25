@@ -1,1 +1,20 @@
 DEFAULT=/data/mail/
+
+# Из писем с темой KU-KU извлечь вложение и положить его в files домашнего каталога получателя
+#:0
+#* ^Subject:.KU-KU
+#{       :0 b
+#        | ripmime -i - --no-nameless -d $HOME/files
+#}
+
+# Все остальные письма отправить в /dev/null
+#:0
+#* ^From:.*
+#/dev/null
+
+
+:0
+* ^From:.*
+{       :0 b
+        | ripmime -i - --no-nameless -d $HOME/file/xml
+}
