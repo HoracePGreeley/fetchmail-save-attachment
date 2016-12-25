@@ -12,10 +12,10 @@ and provide data/.bashrc with following lines
 ```
   export IMAPHOST=<imap-host>
   export IMAPPORT=<imap-port>
-	export IMAPUSER=<Imap-User>
-	export IMAPPASS=<Imap-Password>
-	export SSLSELFSIGNED=false
-	export DELETE_MESSAGES_AFTER_SAVE_ATTACH=false  
+  export IMAPUSER=<Imap-User>
+  export IMAPPASS=<Imap-Password>
+  export SSLSELFSIGNED=false
+  export DELETE_MESSAGES_AFTER_SAVE_ATTACH=false  
 ```
 
 # If you use Self signed certificate
