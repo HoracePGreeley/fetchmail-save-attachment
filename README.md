@@ -1,5 +1,5 @@
 #Mailfetcher
-Docker image based on centos, fetchmail & procmail & repmime for fetching external mail accounts and saving attachment from messages in provided volume  (for example: /data/file/xml)
+Docker image based on centos, fetchmail & procmail & ripmime for fetching external mail accounts and saving attachment from messages in provided volume  (for example: /data/file/xml)
 
 ##Usage
 
