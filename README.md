@@ -11,7 +11,6 @@ touch ~/data/.bashrc
 and provide data/.bashrc with following lines
 ```
 export IMAPHOST=<imap-host>
-export IMAPPORT=<imap-port>
 export IMAPUSER=<Imap-User>
 export IMAPPASS=<Imap-Password>
 export SSLSELFSIGNED=false
@@ -41,7 +40,6 @@ export DELETE_MESSAGES_AFTER_SAVE_ATTACH=true
 ```
 mkdir ~/data
 echo "export IMAPHOST=<imap-host>" > ~/data/.bashrc
-echo "export IMAPPORT=<imap-port>" >> ~/data/.bashrc
 echo "export IMAPUSER=<Imap-User>" >> ~/data/.bashrc
 echo "export IMAPPASS=<Imap-Password>" >> ~/data/.bashrc
 echo "export SSLSELFSIGNED=false" >> ~/data/.bashrc

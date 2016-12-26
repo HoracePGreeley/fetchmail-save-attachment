@@ -5,7 +5,7 @@ source /data/.bashrc
 
 if cd "$dir" 2>/dev/null; then   # "2>/dev/null" подавление вывода сообщений об ошибках.
   if [ "$DELETE_MESSAGES_AFTER_SAVE_ATTACH" ]; then
-    if ["$PERIOD"]; then
+    if [ "$PERIOD" ]; then
       while [ 1 ]; do
           sudo -u mailfetcher fetchmail -K # DELETE_MESSAGES_AFTER_SAVE_ATTACH
           sleep $PERIOD
@@ -15,7 +15,7 @@ if cd "$dir" 2>/dev/null; then   # "2>/dev/null" подавление вывод
     fi
 
   else
-    if ["$PERIOD"]; then
+    if [ "$PERIOD" ]; then
       while [ 1 ]; do
           sudo -u mailfetcher fetchmail # Keep messages
           sleep $PERIOD
